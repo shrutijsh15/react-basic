@@ -24,7 +24,8 @@ const client = {
     module: moduleObj,
     plugins: [
         new HtmlWebPackPlugin({
-            template: 'src/client/index.html'
+            template: 'src/client/index.html',
+            hash: true
           })
     ]
     

@@ -1,3 +1,6 @@
 {
-    "presets": ["env", "react"] //includes ES6, ES7 and ES8 code
+    "presets": ["env", "react"], //includes ES6, ES7 and ES8 code
+    "plugins": [
+        "transform-class-properties"
+    ]
 }
