@@ -1,6 +1,5 @@
 const express = require('express');
 const app = express();
-const labRoutes = require('./routes');
 
 /** middle ware */
 app.use(function(req, res, next){

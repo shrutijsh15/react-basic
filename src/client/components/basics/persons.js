@@ -9,7 +9,8 @@ export default class Persons extends Component{
         }
     }
 
-    handleClick = (name = '') => {
+    handleClick = (name='') => {
+        console.log(this)
         console.log(name);
     }
 
@@ -22,12 +23,12 @@ export default class Persons extends Component{
             <br/>
             {
                 names.map((item, key) => {
-                    return <button onClick={(e) => {this.handleClick(item, e)}} key={key}>{item}</button>
+                    return <button onClick={this.handleClick} key={key}>{item}</button>
                 })
             }
              <br/>
             {
-                 names.map((item, key) => {
+                names.map((item, key) => {
                     return <button onClick={this.handleClick.bind(this, item)} key={key}>{item}</button>
                 })
             }

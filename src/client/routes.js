@@ -10,7 +10,6 @@ const AppRoutes = () => (
         <ul>
         <li><Link to='/about'>About</Link></li>
             <li><Link to='/basics'>Basics</Link></li>
-
         </ul>
         <Switch>
             <Route path="/" exact component={home} />
