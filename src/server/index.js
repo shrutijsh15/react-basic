@@ -8,13 +8,6 @@ app.use(function(req, res, next){
 });
 
 app.use(express.static('dist/public'));
+app.use('/assets',express.static( 'public/css'));
+
 app.listen(3003, () => console.log(`Example app listening on port !`));
-
-/*import Webserver from './web.server';
-const webserver = new Webserver();
-
-webserver.start().then(() => {
-    console.log('started') 
-}).catch(e => {
-
-});*/

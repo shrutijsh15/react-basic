@@ -26,7 +26,7 @@ const client = {
         new HtmlWebPackPlugin({
             template: 'src/client/index.html',
             hash: true
-          })
+        })
     ]
     
 };
